@@ -6,5 +6,25 @@
 //
 
 
+import SwiftUI
 
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            List(listOfItems) { player in
+                NavigationLink(destination: PlayerDetailView(player: player)) {
+                    ListItem(image: player.faceImage,
+                             title: player.name,
+                             subtitle: player.subtitle)
+                }
+            }
+            .navigationTitle("NBA All-Stars")
+        }
+       
+    }
+}
+
+#Preview {
+    ContentView()
+}
 

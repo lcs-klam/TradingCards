@@ -64,6 +64,8 @@ struct PlayerDetailView: View {
             }
             .padding()
         }
+        
+        .background(player.color2)
     }
 }
 

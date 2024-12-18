@@ -32,8 +32,8 @@ struct allStar: Identifiable {
 }
 
 let Shaq = allStar(
-    color1: .lakers,
-    color2: .lakers2,
+    color1: .lakers2,
+    color2: .lakers,
     image: "Shaq",
     faceImage: "Shaq",
     team: "Lakers",
@@ -93,7 +93,7 @@ let Jrue = allStar(
 
 let Thomas = allStar(
     color1: .red,
-    color2: .white,
+    color2: .green,
     image: "Thomas",
     faceImage: "Thomas",
     team: "Lakefield Terrapins",
@@ -107,7 +107,7 @@ let Thomas = allStar(
     rebounds: "0",
     steals: "0",
     blocks: "0",
-    bodyText: "Thomas Noone is not a promising high school basketball player at Lakefield College School. Virtually Unknown for his sharp shooting and court vision, Thomas has absent on his school's varsity team since his sophomore year.",
+    bodyText: "Thomas Noone is not a promising high school basketball player at Lakefield College School. Virtually Unknown for his sharp shooting and court vision, Thomas has been absent on his school's varsity team since his sophomore year.",
     subtitle: "Thomas Noone has never played Basketball in his life."
 )
 
