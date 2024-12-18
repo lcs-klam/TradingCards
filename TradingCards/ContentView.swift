@@ -18,6 +18,7 @@ struct ContentView: View {
                              subtitle: player.subtitle)
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("NBA All-Stars")
         }
        

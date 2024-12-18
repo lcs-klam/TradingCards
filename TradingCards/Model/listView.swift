@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct ListItem: View {
     let image: String
     let title: String
@@ -34,10 +35,10 @@ struct ListItem: View {
     }
 }
 
-struct ListItem_Previews: PreviewProvider {
-    static var previews: some View {
-        ListItem(image: "Thomas",
-                 title: "Thomas Noone",
-                 subtitle: "He's my classmate in computer science and has never played in the NBA.")
-    }
+#Preview {
+    ListItem(image: "Thomas",
+             title: "Thomas Noone",
+             subtitle: "He's my classmate in computer science and has never played in the NBA.")
 }
+
+        
