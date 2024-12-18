@@ -5,14 +5,39 @@
 //  Created by Kevin Lam on 17/12/2024.
 //
 
+
 import SwiftUI
 
-struct listView: View {
+struct ListItem: View {
+    let image: String
+    let title: String
+    let subtitle: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack() {
+            Image(image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+                .cornerRadius(25)
+            
+            
+            VStack(alignment: .leading) {
+                
+                Text(title)
+                    .bold()
+                
+                Text(subtitle)
+                    .font(.caption)
+                
+            }
+        }
     }
 }
 
-#Preview {
-    listView()
+struct ListItem_Previews: PreviewProvider {
+    static var previews: some View {
+        ListItem(image: "Thomas",
+                 title: "Thomas Noone",
+                 subtitle: "He's my classmate in computer science and has never played in the NBA.")
+    }
 }
